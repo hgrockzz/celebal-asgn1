@@ -35,6 +35,7 @@ nav a:last-child{
 }
 
 .content{
+    /* border: 2px solid #000; */
     display: flex;
     align-items: center;
     justify-content: end;
@@ -42,6 +43,7 @@ nav a:last-child{
     min-height: 550px;
 }
 .box{
+    /* border: 2px solid #00f; */
     width: 500px;
 }
 .box h2{
@@ -154,17 +156,19 @@ nav a:last-child{
 }
 
 /* 3rd sections ends */
+
 .s4{
     /* border: 2px solid blue; */
     padding: 20px 0;
 }
 .s4-detail{
+    /* border: 2px solid blue; */
     display: flex;
     align-items: center;
-    /* flex-wrap:wrap; */
     margin: 80px 20px;
 }
 .s4-text, .s4-img{
+    /* border: 2px solid blue; */
     width: 50%;
     margin: 0 60px;
 } 
@@ -259,4 +263,49 @@ footer li:first-child{
     flex-wrap: wrap;
     padding: 40px;
     color: #fff;
+    /* border: 2px solid white; */
+}
+
+/* media queries */
+@media(max-width: 586px){
+    .s4-img img{
+        width: inherit;
+    }
+    .s4-detail{
+        flex-wrap:wrap;
+    }
+    .s4-text, .s4-img{
+        width: 100%;
+        margin: 10px 0px;
+    } 
+    .container{
+        /* border: 2px solid blue; */
+        max-width: 100vw;
+        min-height: fit-content;
+        /* background: #e0e0e0; */
+    }
+    .content{
+        justify-content: center;
+        max-width: 100%;
+        padding: 0 10px;
+    }
+    nav{
+        justify-content: space-evenly;
+    }
+    nav a{
+        font-size: 15px;
+    }
+    .features-div1 {
+        max-width: 90vw;
+        margin: 30px 0;
+    }
+    .features-div-2 {
+        justify-content: center;
+    }
+    .featureCard-bg {
+        width: 60vw;
+    }
+    footer{
+        padding: 30px 0px;
+    }
 }
