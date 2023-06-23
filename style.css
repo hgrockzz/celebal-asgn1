@@ -229,10 +229,12 @@ nav a:last-child{
 footer{
     background-color: rgb(255, 63, 63);
     padding: 30px 20px;
+    width: 100vw;
 }
 .foot-flex{
     display: flex;
     justify-content: start;
+    flex-wrap: wrap;
     gap: 30px;
     padding: 20px 0;
 }
