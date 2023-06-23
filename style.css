@@ -161,7 +161,7 @@ nav a:last-child{
 .s4-detail{
     display: flex;
     align-items: center;
-    flex-wrap:wrap;
+    /* flex-wrap:wrap; */
     margin: 80px 20px;
 }
 .s4-text, .s4-img{
